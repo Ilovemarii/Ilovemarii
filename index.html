@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Pedido Especial ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts-container"></div>
+    
+    <div class="page page-1 active">
+        <div class="carta">
+            <h1>Para Você ❤️</h1>
+            <div class="carta-conteudo">
+                <p>Desde o momento em que você entrou na minha vida, tudo mudou.</p>
+                <p>Seu sorriso ilumina meus dias, sua voz acalma meu coração, e sua presença faz tudo fazer sentido.</p>
+                <p>Cada momento ao seu lado é especial, cada conversa é única, cada risada é uma lembrança que guardo com carinho.</p>
+                <p>Você me faz querer ser uma pessoa melhor, me inspira, me completa de uma forma que eu nem sabia que era possível.</p>
+                <p>E é por tudo isso que eu preciso te fazer uma pergunta muito importante...</p>
+            </div>
+            <button class="btn-proximo" onclick="proximaPagina()">Continuar ➜</button>
+        </div>
+    </div>
+
+    <div class="page page-2">
+        <div class="fogos-container"></div>
+        <div class="estrelas-fundo"></div>
+        <div class="galeria">
+            <h1>Vários cientistas no mundo, e nenhum sabe descrever como é sua beleza! 💜</h1>
+            <div class="fotos-grid">
+                <div class="foto-slot">
+                    <img src="foto1.png" alt="Foto 1">
+                </div>
+                <div class="foto-slot">
+                    <img src="foto2.png" alt="Foto 2">
+                </div>
+                <div class="foto-slot">
+                    <img src="foto3.png" alt="Foto 3">
+                </div>
+                <div class="foto-slot">
+                    <img src="foto4.png" alt="Foto 4">
+                </div>
+                <div class="foto-slot">
+                    <img src="foto5.png" alt="Foto 5">
+                </div>
+                <div class="foto-slot">
+                    <img src="foto6.png" alt="Foto 6">
+                </div>
+            </div>
+            <button class="btn-proximo" onclick="proximaPagina2()">Continuar ➜</button>
+        </div>
+    </div>
+
+    <div class="page page-3">
+        <div class="carta">
+            <h1>Para a Mari 💙</h1>
+            <div class="carta-conteudo">
+                <p>Eu amo a Mari de um jeito que é até difícil explicar. Não é só por ela ser linda, mas pelo jeito dela, pela forma como fala, como sorri, como consegue deixar meu dia melhor sem nem perceber. Desde que ela apareceu na minha vida, tudo parece ter ficado mais leve.</p>
+                <p>Eu amo o jeito que ela me faz pensar nela o tempo todo, o jeito que ela ocupa minha mente sem esforço nenhum. Às vezes eu me pego lembrando de coisas simples que ela disse, e isso já é suficiente pra eu sorrir sozinho. É um sentimento sincero, daqueles que vêm de dentro e que a gente não força — simplesmente acontece.</p>
+                <p>A Mari tem algo diferente. Algo que chama atenção, que prende, que faz querer estar perto, conversar mais, conhecer cada detalhe. Eu amo quem ela é, amo a energia dela, amo a forma como ela existe.</p>
+                <p>Se amar é querer ver alguém feliz, apoiar, cuidar e estar presente, então é exatamente isso que eu sinto por ela. 💙</p>
+            </div>
+            <button class="btn-proximo" onclick="proximaPagina3()">Continuar ➜</button>
+        </div>
+    </div>
+
+    <div class="page page-4">
+        <div class="cena-piquenique">
+            <div class="estrelas-container"></div>
+            <div class="montanha"></div>
+            <div class="mensagem-paisagem">
+                <h1>Olha essa paisagem, como você consegue ser mais bonita que ela?!?! �</h1>
+            </div>
+            <button class="btn-proximo btn-cena" onclick="proximaPagina4()">Continuar ➜</button>
+        </div>
+    </div>
+
+    <div class="page page-5">
+        <div class="harry-potter-quiz">
+            <div class="harry-personagem">
+                <img src="harry.png" alt="Harry Potter">
+                <div class="balao-fala">
+                    <p>Olá Mari!</p>
+                    <p>Para você conseguir sair daqui você terá que responder qual é o primeiro feitiço que eu usei!</p>
+                </div>
+            </div>
+            <div class="quiz-resposta">
+                <input type="text" id="resposta-feitico" placeholder="Digite o feitiço...">
+                <button class="btn-verificar" onclick="verificarResposta()">Verificar</button>
+                <p class="mensagem-erro" id="mensagem-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-6">
+        <div class="gato-quiz">
+            <div class="gato-personagem">
+                <img src="gato.png" alt="Gatinho">
+                <div class="balao-fala">
+                    <p>Miau! 🐱</p>
+                    <p>Qual é a coisa que eu mais gosto?</p>
+                </div>
+            </div>
+            <div class="quiz-resposta">
+                <input type="text" id="resposta-gato" placeholder="Sua resposta...">
+                <button class="btn-verificar" onclick="verificarRespostaGato()">Verificar</button>
+                <p class="mensagem-erro" id="mensagem-erro-gato"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-7">
+        <div class="stranger-desafio">
+            <div class="max-personagem">
+                <img src="max.png" alt="Max">
+                <div class="balao-fala">
+                    <p>Eiei! O que você quer com o Rafiks?</p>
+                    <p>Você só vai conseguir algo com ele se conseguir me vencer no desafio!</p>
+                </div>
+            </div>
+            <div class="botoes-desafio">
+                <button class="btn-continuar-desafio" onclick="iniciarDesafio()">Aceitar Desafio</button>
+                <button class="btn-desistir" onclick="desistirDesafio()">Desistir</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-7-desafio">
+        <div class="desafio-max">
+            <h2>Toque na Max para vencer! 🎯</h2>
+            <img src="max.png" alt="Max" class="max-fugindo" id="max-fugindo" onclick="maxCapturada()">
+            <p class="tentativas" id="tentativas">Tentativas: 0</p>
+        </div>
+    </div>
+
+    <div class="page page-8">
+        <div class="maysa-quiz">
+            <div class="maysa-personagem">
+                <img src="maysa.png" alt="Maysa">
+                <div class="balao-fala">
+                    <p>Oi Mari! 👋</p>
+                    <p>Nós ficamos sabendo que você quer namorar com o Rafiks, você acha que você pode conseguir aturar ele? E cuidar dele?</p>
+                    <p>Caso sim, clique para ir para a página definitiva!</p>
+                </div>
+            </div>
+            <button class="btn-proximo" onclick="irParaPaginaDefinitiva()">Sim, eu consigo! 💜</button>
+        </div>
+    </div>
+
+    <div class="page page-9">
+        <div class="pergunta">
+            <h1>Quer namorar comigo? 💜</h1>
+            <div class="botoes">
+                <button class="btn-sim" onclick="responderSim()">SIM! ❤️</button>
+                <button class="btn-nao" onmouseover="fugirBotao(this)">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-10">
+        <audio id="audio-final" loop autoplay>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+        <div class="resposta-final">
+            <h1>💜 Minha Princesinha 💜</h1>
+            <div class="mensagem-final">
+                <p>Então Mari KK, se você chegou aqui é porque você aceitou o pedido de namoro e bom, eu tô muitooooo felizzzzzz de tá namorando com você, porque você é minha princesinha!</p>
+                <p>Nós dois somos dois emocionados que com 1 dia de conversa já tava dando em cima um do outro 😂</p>
+                <p>Eu te amo minha vida, eu espero casar com você e ficar com você pra sempre!</p>
+                <p class="destaque">Eu te amo minha garota! ❤️</p>
+            </div>
+            <div class="coracao-grande">❤️</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

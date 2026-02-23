@@ -1085,12 +1085,18 @@ body {
     }
     
     .btn-cena {
-        bottom: 30px !important;
+        bottom: 50px !important;
         padding: 12px 30px !important;
         font-size: 1em !important;
         z-index: 100 !important;
         pointer-events: auto !important;
         cursor: pointer !important;
+    }
+    
+    .cena-piquenique {
+        height: 100vh !important;
+        padding-bottom: 70px !important;
+        overflow-y: auto !important;
     }
     
     /* Quiz Harry Potter e Gato */
@@ -1263,14 +1269,20 @@ body {
     }
     
     .btn-cena {
-        bottom: 20px !important;
-        padding: 10px 25px !important;
+        bottom: 60px !important;
+        padding: 12px 30px !important;
         font-size: 0.9em !important;
         z-index: 100 !important;
         pointer-events: auto !important;
         cursor: pointer !important;
         min-height: 44px !important;
         min-width: 120px !important;
+    }
+    
+    .cena-piquenique {
+        height: 100vh !important;
+        padding-bottom: 80px !important;
+        overflow-y: auto !important;
     }
     
     .pergunta h1 {

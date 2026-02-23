@@ -1040,14 +1040,39 @@ body {
         margin-top: 20px !important;
     }
     
-    /* Mensagem paisagem */
+    /* Mensagem paisagem - PÁGINA 4 */
     .mensagem-paisagem {
         padding: 20px !important;
         max-width: 90% !important;
+        position: absolute !important;
+        top: 15% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        z-index: 5 !important;
+        text-align: center !important;
     }
     
     .mensagem-paisagem h1 {
         font-size: 1.5em !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0 !important;
+    }
+    
+    /* Cena piquenique responsiva */
+    .cena-piquenique {
+        height: 100vh !important;
+        overflow: hidden !important;
+    }
+    
+    .montanha {
+        height: 50% !important;
+        clip-path: polygon(0 100%, 0 70%, 15% 50%, 30% 60%, 50% 40%, 70% 55%, 85% 45%, 100% 60%, 100% 100%) !important;
+    }
+    
+    .btn-cena {
+        bottom: 30px !important;
+        padding: 12px 30px !important;
+        font-size: 1em !important;
     }
     
     /* Quiz Harry Potter e Gato */
@@ -1196,6 +1221,27 @@ body {
     
     .mensagem-paisagem h1 {
         font-size: 1.2em !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* Ajustes página 4 para mobile pequeno */
+    .cena-piquenique {
+        height: 100vh !important;
+    }
+    
+    .montanha {
+        height: 60% !important;
+    }
+    
+    .mensagem-paisagem {
+        top: 10% !important;
+        padding: 15px !important;
+    }
+    
+    .btn-cena {
+        bottom: 20px !important;
+        padding: 10px 25px !important;
+        font-size: 0.9em !important;
     }
     
     .pergunta h1 {
